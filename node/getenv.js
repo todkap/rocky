@@ -2,9 +2,10 @@ var fs = require("fs");
 
 var express = require('express')
 var app = express()
+var env;
 
 app.get('/', function (req, res) {
-  res.send("/test endpoint for getenv")
+  res.send(env)
 })
 
 app.listen(3000, function(err){
@@ -14,7 +15,8 @@ app.listen(3000, function(err){
                         console.error(err);
                         return err;
                 }
-                console.log(data.toString());
+		env = data.toString(); 
+                console.log(env);
         });
 
 })
