@@ -9,8 +9,8 @@ RUN node --version
 
 
 WORKDIR /app
-COPY package.json package.json 
-COPY getenv.js getenv.js
+COPY node/package.json package.json 
+COPY node/getenv.js getenv.js
 RUN npm install
 EXPOSE 3000
 
