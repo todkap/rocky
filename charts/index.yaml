@@ -3,12 +3,12 @@ entries:
   rocky:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-01-08T16:09:39.943348-05:00"
+    created: "2024-01-08T16:22:38.73908-05:00"
     description: A Helm chart for Kubernetes
-    digest: 8b382ff787532fb771dc336e01cf17418307df926521929ada8f5dd2ab5ce45e
+    digest: a63188d87a7e5362f4911a4ffbac25cd2b7bf4673c45bdaf624c7c9e24601cc0
     name: rocky
     type: application
     urls:
     - docs/rocky-1.0.0.tgz
     version: 1.0.0
-generated: "2024-01-08T16:09:39.942487-05:00"
+generated: "2024-01-08T16:22:38.738213-05:00"
