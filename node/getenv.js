@@ -1,4 +1,9 @@
 var fs = require("fs");
+var logger = require('pino')( {
+  mixin(_context, level) {
+    return { 'severity': logger.levels.labels[level] }
+  }
+});
 
 var express = require('express')
 var app = express()
@@ -16,7 +21,7 @@ app.listen(3000, function(err){
                         return err;
                 }
 		env = data.toString(); 
-                console.log(env);
+		logger.info(env);
         });
 
 })
